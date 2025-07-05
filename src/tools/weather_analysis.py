@@ -13,7 +13,7 @@ def get_real_time_weather(location:str)->str:
         str: Real time weather in celsius and detailed status
     """
     
-    owm = OWM('1dcfe2a2cd866a984f6dc862bfc8a584')
+    owm = OWM('*********************')       #Not set in env file - Hardcode the API key here
     mgr = owm.weather_manager()
     observation = mgr.weather_at_place(f"{location}")
     weather = observation.weather
